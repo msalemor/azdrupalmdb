@@ -1,10 +1,17 @@
-# Drup on Azure Web App with MariaDB
+# Drupal and MariaDB on Azure
 
+## Objective
+
+This guide is for those wanting to deploy Drupal using MariaDB on Azure as a Web App.
+
+<!--
+## Web App
 Deploying Drupal to a Web App on Azure using MariaDb
 Site=drupalapp2
 DB=drupaldbsvr2
+-->
 
-# Create the database
+# Create the MariaDB database
 Create MariaDB instance
   - After creation go to the setting and set Inno_DB_File = true
   - Allow Azure services to connect
