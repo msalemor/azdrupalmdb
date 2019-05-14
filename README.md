@@ -1,4 +1,4 @@
-# Drupal and MariaDB on Azure
+# Drupal and MariaDB on Azure Linux Web App
 
 ## Objective
 
@@ -11,22 +11,25 @@ Site=drupalapp2
 DB=drupaldbsvr2
 -->
 
-# Create the MariaDB database
+## Create the MariaDB database
+
 Create MariaDB instance
   - After creation go to the setting and set Inno_DB_File = true
   - Allow Azure services to connect
 
-# Create the service plan
+## Create the service plan
+
 - Create Linux or Windows Service Plan
 - Set PHP to the version of Drupal (i.e. Drupal v8 requires at least PHP 7.2)
 
-# Create a web app
+## Create a web app
+
 - Create Web App for the service plan
 
-# Install drupal on the web app
-If on Linux:
-- Login using SSH
-- Execute:
+## Install drupal on the web app
+
+- Login using SSH and execute:
+
 ```bash
 cd /Home
 mkdir Download && cd Download
@@ -38,7 +41,7 @@ cp -r /home/Download/drupal-8.7.1/. .
 
 if on Windows:
 
-# create the drupal database in Maria DB
+## create the drupal database in Maria DB
 
 - On Linux:
 
@@ -49,6 +52,4 @@ create database drupal8;
 exit;
 ```
 
-# Create site
-admin
-Secreto123456
+## Proceed with the Drupal Installation
